@@ -1,12 +1,15 @@
-import { marked } from 'marked';
+// import { marked } from 'marked';
 
 function Descbox({ children }) {
-    const renderHTMLString = (htmlString) => {
-        return { __html: marked(htmlString, { mangle: false, headerIds: false }) };
-    };
+    // const renderHTMLString = (htmlString) => {
+    //     return { __html: marked(htmlString, { mangle: false, headerIds: false }) };
+    // };
 
+    // return (
+    //     <div dangerouslySetInnerHTML={renderHTMLString(children)} className="descbox"></div>
+    // );
     return (
-        <div dangerouslySetInnerHTML={renderHTMLString(children)} className="descbox"></div>
+        <div className="descbox">{children}</div>
     );
 }
 

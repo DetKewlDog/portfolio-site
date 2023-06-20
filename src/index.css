@@ -75,11 +75,11 @@ body {
 .navbar li span {
     font-size: 1.2rem;
     padding: 16px 14px;
+    padding-right: 24px;
 }
 
 .navbar li a {
     padding: 18px 16px;
-    padding-right: 24px;
 }
 
 .navbar li a:hover {
