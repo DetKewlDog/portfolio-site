@@ -2,8 +2,8 @@
     --col-bg1: #444444;
     --col-bg2: #262626;
     
-    --col-descbox1: rgba(75, 75, 75, 0.8);
-    --col-descbox2: rgba(98, 98, 98, 0.8);
+    --col-descbox1: rgba(75, 75, 75, 0.5);
+    --col-descbox2: rgba(98, 98, 98, 0.5);
     
     --col-nav1: #111111;
     --col-nav2: #292929;
@@ -102,7 +102,7 @@ body {
     color: var(--col-text-w1);
     font-size: 4rem;
     margin-bottom: 16px;
-    text-shadow: 5px 5px 5px var(--col-shadow);
+    text-shadow: 5px 0 5px var(--col-shadow);
 }
 
 .title h2 {
@@ -110,7 +110,7 @@ body {
     color: var(--col-text-o1);
     font-size: 1.8rem;
     margin-top: 0;
-    text-shadow: 3px 3px 3px var(--col-shadow);
+    text-shadow: 3px 0 3px var(--col-shadow);
 }
 
 .descbox {
@@ -136,13 +136,13 @@ body {
 }
 
 .descbox h1 {
-    text-shadow: 3px 3px 3px var(--col-shadow);
+    text-shadow: 3px 0 3px var(--col-shadow);
 }
 
 .descbox h2 {
-    text-shadow: 2px 2px 2px var(--col-shadow);
+    text-shadow: 2px 0 2px var(--col-shadow);
 }
 
 .descbox p {
-    text-shadow: 1.5px 1.5px 1.5px var(--col-shadow);
+    text-shadow: 1.5px 0 1.5px var(--col-shadow);
 }
