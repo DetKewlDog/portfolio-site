@@ -1,6 +1,19 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-createRoot(document.getElementById('root')).render(<App />);
+import Home from './pages/Home.jsx';
+
+import Navbar from './components/Navbar.jsx';
+
+createRoot(document.getElementById("root")).render(
+    <div className="overlay">
+        <Navbar />
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                {/* <Route path='/projects' element={<Projects />} /> */}
+            </Routes>
+        </BrowserRouter>
+    </div>
+);

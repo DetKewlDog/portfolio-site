@@ -1,0 +1,147 @@
+:root {
+    --col-bg1: #444444;
+    --col-bg2: #262626;
+    
+    --col-descbox: #4B4B4B;
+    
+    --col-nav1: #111111;
+    --col-nav2: #292929;
+    
+    --col-text-w1: #FFFFFF;
+
+    --col-text-b1: #111111;
+    --col-text-b2: #626262;
+    
+    --col-text-o1: #FF7A18;
+    --col-text-o2: #FFA767;
+
+    --col-shadow: rgba(0, 0, 0, .5);
+}
+
+.unselectable {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--col-nav1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 55px;
+}
+
+.navbar li a,
+.navbar li span {
+    display: block;
+    color: var(--col-text-w1);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.navbar li span {
+    font-size: 1.2rem;
+    padding: 16px 14px;
+}
+
+.navbar li a {
+    padding: 18px 16px;
+    padding-right: 24px;
+}
+
+.navbar li a:hover {
+    background-color: var(--col-nav2);
+    color: var(--col-text-o1);
+    transition: background ease-in-out .2s, color ease-in-out .2s;
+}
+
+.title {
+    width: 100%;
+    bottom: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h1 {
+    display: block;
+    color: var(--col-text-w1);
+    font-size: 4rem;
+    margin-bottom: 16px;
+    text-shadow: 5px 5px 5px var(--col-shadow);
+}
+
+.title h2 {
+    display: block;
+    color: var(--col-text-o1);
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-shadow: 3px 3px 3px var(--col-shadow);
+}
+
+.descbox {
+    background-color: var(--col-descbox);
+    font-size: 1.2rem;
+    color: var(--col-text-b1);
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    margin: 4rem;
+    margin-top: 0;
+    padding: .5rem;
+    position: relative;
+    color: var(--col-text-w1);
+    box-shadow: 5px 5px 15px 5px var(--col-shadow);
+}
+
+.descbox a {
+    color: var(--col-text-o1);
+}
+
+.descbox a:hover {
+    color: var(--col-text-o2);
+}
+
+.descbox h1 {
+    text-shadow: 3px 3px 3px var(--col-shadow);
+}
+
+.descbox h2 {
+    text-shadow: 2px 2px 2px var(--col-shadow);
+}
+
+.descbox p {
+    text-shadow: 1.5px 1.5px 1.5px var(--col-shadow);
+}
