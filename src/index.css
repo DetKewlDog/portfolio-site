@@ -2,7 +2,8 @@
     --col-bg1: #444444;
     --col-bg2: #262626;
     
-    --col-descbox: #4B4B4B;
+    --col-descbox1: rgba(75, 75, 75, 0.8);
+    --col-descbox2: rgba(98, 98, 98, 0.8);
     
     --col-nav1: #111111;
     --col-nav2: #292929;
@@ -113,7 +114,7 @@ body {
 }
 
 .descbox {
-    background-color: var(--col-descbox);
+    background: linear-gradient(360deg, var(--col-descbox1) 0%, var(--col-descbox2) 100%);
     font-size: 1.2rem;
     color: var(--col-text-b1);
     overflow-wrap: break-word;
