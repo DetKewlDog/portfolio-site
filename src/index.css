@@ -129,6 +129,7 @@ body {
 
 .descbox a {
     color: var(--col-text-o1);
+    color: transparent;
 }
 
 .descbox a:hover {
