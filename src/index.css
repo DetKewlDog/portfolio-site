@@ -2,8 +2,8 @@
     --col-bg1: #444444;
     --col-bg2: #262626;
     
-    --col-descbox1: rgba(75, 75, 75, 0.5);
-    --col-descbox2: rgba(98, 98, 98, 0.5);
+    --col-descbox1: rgba(40, 35, 51, 0.5);
+    --col-descbox2: rgba(43, 42, 61, 0.5);
     
     --col-nav1: #111111;
     --col-nav2: #292929;
@@ -40,6 +40,7 @@ body {
     background-attachment: fixed;
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .overlay {
