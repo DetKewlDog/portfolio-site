@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Descbox from '../components/Descbox';
 import GithubAccess from '../services/GithubAccess.jsx';
-import '../index.css';
 
 function Home() {
     const [aboutMe, setAboutMe] = useState('');

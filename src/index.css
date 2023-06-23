@@ -1,22 +1,73 @@
 :root {
     --col-bg1: #444444;
     --col-bg2: #262626;
-    
+
     --col-descbox1: rgba(40, 35, 51, 0.5);
     --col-descbox2: rgba(43, 42, 61, 0.5);
-    
+
     --col-nav1: #111111;
     --col-nav2: #292929;
-    
+
     --col-text-w1: #FFFFFF;
 
     --col-text-b1: #111111;
     --col-text-b2: #626262;
-    
+
     --col-text-o1: #FF7A18;
     --col-text-o2: #FFA767;
 
     --col-shadow: rgba(0, 0, 0, .5);
+}
+
+@keyframes fade-in { from { opacity: 0; } }
+
+@keyframes fade-out { to { opacity: 0; } }
+
+@keyframes slide-from-right { from { transform: translateX(-100%); } }
+@keyframes slide-from-left { from { transform: translateX(100%); } }
+@keyframes slide-to-right { to { transform: translateX(-100%); } }
+@keyframes slide-to-left { to { transform: translateX(100%); } }
+
+::view-transition-old(root) {
+    animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+        300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+  }
+
+::view-transition-new(root) {
+    animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+        300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+.anim-right-to-left::view-transition-old(root) { animation-name: fade-out, slide-to-left; }
+.anim-right-to-left::view-transition-new(root) { animation-name: fade-in, slide-from-right; }
+.anim-left-to-right::view-transition-old(root) { animation-name: fade-out, slide-to-right; }
+.anim-left-to-right::view-transition-new(root) { animation-name: fade-in, slide-from-from; }
+
+body.animate::before {
+    animation: fade-in 2s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--col-bg2);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--col-bg1);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--col-text-b2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--col-bg1);
 }
 
 .unselectable {
@@ -34,10 +85,11 @@ html {
 }
 
 body {
-    background-image: url('../images/bg.png');
+    background-image: url('../public/images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: var(--col-bg2);
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -146,4 +198,93 @@ body {
 
 .descbox p {
     text-shadow: 1.5px 0 1.5px var(--col-shadow);
+}
+
+.grid-container {
+    display: grid;
+    padding: 30px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(calc(250px + 2 * .5rem), calc(250px + 2 * .5rem)));
+    grid-gap: 32px;
+}
+
+.project {
+    width: 250px;
+    height: 400px;
+    margin: 0;
+}
+
+.project {
+    min-width: inherit;
+    min-width: inherit;
+    text-decoration: none;
+    border-radius: 8px;
+    border-color: transparent;
+    border-style: solid;
+    overflow: hidden;
+}
+
+.project:hover {
+    border-color: var(--col-text-o1);
+    transform: translateY(-4px);
+    transition: border-color ease-in-out 0.2s, transform ease-in-out 0.2s;
+}
+
+.project h1 {
+    color: var(--col-text-o1);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 26px;
+}
+
+.project h1 span {
+    font-size: 16px;
+}
+
+.project:hover h1 {
+    color: var(--col-text-o2);
+    transition: color ease-in-out 0.2s;
+}
+
+.project p {
+    margin-top: 0;
+    color: var(--col-text-w1);
+}
+
+.project img {
+    width: inherit;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project:after {
+    content: "";
+    position: absolute;
+    top: -140%;
+    left: -230%;
+    width: 225%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.0) 0%,
+        rgba(255, 255, 255, 0.13) 77%,
+        rgba(255, 255, 255, 0.5) 92%,
+        rgba(255, 255, 255, 0.0) 100%
+    );
+}
+
+.project:hover:after {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transition-property: left, top, opacity;
+    transition-duration: 1.4s, 1.4s, 0.5s;
+    transition-timing-function: ease;
+}
+
+.project:active:after {
+    opacity: 0;
 }
