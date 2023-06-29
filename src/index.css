@@ -217,7 +217,7 @@ body {
 .grid-container {
     display: grid;
     padding: 30px 30px;
-    grid-template-columns: repeat(auto-fit, minmax(calc(250px + 2 * .5rem), calc(250px + 2 * .5rem)));
+    grid-template-columns: repeat(auto-fit, minmax(calc(250px + 1rem), calc(250px + 1rem)));
     grid-gap: 32px;
 }
 
