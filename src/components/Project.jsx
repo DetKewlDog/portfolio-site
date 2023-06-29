@@ -1,5 +1,4 @@
-function Project({ url, title, img, children }) {
-    console.log(img);
+export default function Project({ url, title, img, children }) {
     return (
         <a className="descbox project" href={url} target="_blank">
             <img src={img} alt={title}></img>
@@ -8,5 +7,3 @@ function Project({ url, title, img, children }) {
         </a>
     );
 }
-
-export default Project;

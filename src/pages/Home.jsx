@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import Descbox from '../components/Descbox';
-import GithubAccess from '../services/GithubAccess.jsx';
+import GithubAccess from '../services/GithubAccess';
 
-function Home() {
+export default function Home() {
     const [aboutMe, setAboutMe] = useState('');
 
     useEffect(() => {
@@ -13,15 +13,15 @@ function Home() {
         fetchData();
     }, []);
 
-    return <>
-        <div className='title unselectable'>
-            <h1>Bar Goldenstein</h1>
-            <h2>Game developer + programmer</h2>
-        </div>
+    return (
+        <>
+            <div className='title unselectable'>
+                <h1>Bar Goldenstein</h1>
+                <h2>Game developer + programmer</h2>
+            </div>
 
-        <Descbox>{aboutMe}</Descbox>
-        <br />
-    </>
+            <Descbox>{aboutMe}</Descbox>
+            <br />
+        </>
+    );
 }
-
-export default Home;

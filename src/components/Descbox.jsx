@@ -1,6 +1,6 @@
 import { marked } from 'marked';
 
-function Descbox({ children }) {
+export default function Descbox({ children }) {
     const renderHTMLString = (htmlString) => {
         return { __html: marked(htmlString, { mangle: false, headerIds: false }) };
     };
@@ -9,5 +9,3 @@ function Descbox({ children }) {
         <div dangerouslySetInnerHTML={renderHTMLString(children)} className="descbox"></div>
     );
 }
-
-export default Descbox;

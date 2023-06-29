@@ -4,10 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './index.css';
 
-import Home from './pages/Home.jsx';
-import Projects from './pages/Projects.jsx';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
-import Navbar from './components/Navbar.jsx';
+import Navbar from './components/Navbar';
 
 createRoot(document.getElementById("root")).render(
     <div className="overlay">

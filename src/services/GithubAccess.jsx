@@ -1,4 +1,4 @@
-class GitHubAccess {
+export default class GitHubAccess {
     static async fetchAboutMe() {
         try {
             const response = await fetch('https://api.github.com/repos/DetKewlDog/DetKewlDog/contents/README.md');
@@ -16,5 +16,3 @@ class GitHubAccess {
         }
     }
 }
-
-export default GitHubAccess;
