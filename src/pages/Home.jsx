@@ -14,7 +14,7 @@ export default function Home() {
     }, []);
 
     return (
-        <>
+        <section id="home">
             <div className='title unselectable'>
                 <h1>Bar Goldenstein</h1>
                 <h2>Game developer + programmer</h2>
@@ -22,6 +22,6 @@ export default function Home() {
 
             <Descbox>{aboutMe}</Descbox>
             <br />
-        </>
+        </section>
     );
 }
