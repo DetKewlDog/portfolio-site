@@ -7,9 +7,10 @@ export default function AnimatedLink({ to, children, dir }) {
         <a href={to}
 		    onClick={async (e) => {
                 e.preventDefault();
-                if (window.location.pathname === to) return navigate(to);
+                if (!document.startViewTransition || window.location.pathname === to) return navigate(to);
                 document.documentElement.classList.add(dir);
                 try { await document.startViewTransition(() => navigate(to)).finished; }
+                catch { navigate(to) }
                 finally { document.documentElement.classList.remove(dir); }
 		    }}
 	    >
