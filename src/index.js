@@ -14,8 +14,8 @@ createRoot(document.getElementById("root")).render(
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/projects' element={<Projects />} />
+                <Route path='/'         element={<Home />       } />
+                <Route path='/projects' element={<Projects />   } />
             </Routes>
         </BrowserRouter>
     </div>
