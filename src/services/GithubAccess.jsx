@@ -8,7 +8,7 @@ export default class GitHubAccess {
             const data = await response.json();
             // using a timestamp in order to make the stats graph unique every time, so it wont be cached and would animate every time
             const timestamp = new Date().getTime();
-            return decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))))
+            return decodeURIComponent(escape(atob(data.content.replace(/\n/g, '').replace(/ /g, ''))))
                 .replace('DetKewlDog', 'Bar')
                 .replace('" alt="Top Lang"', `?${timestamp}" alt="Top Lang"`);
         } catch (error) {

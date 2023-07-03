@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb:active {
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 html {
-    height: 100%;
+    height: -webkit-fill-available;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -213,6 +213,10 @@ section {
 
 .descbox p {
     text-shadow: 1.5px 0 1.5px var(--col-shadow);
+}
+
+#badges > a {
+    text-decoration: none;
 }
 
 .grid-container {
