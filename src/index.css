@@ -106,14 +106,15 @@ section {
     top: 0;
     z-index: 1;
     width: 100%;
-    view-transition-name: navbar
+    max-height: 55px;
+    view-transition-name: navbar;
+    overflow: hidden;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: var(--col-nav1);
     position: -webkit-sticky;
     position: sticky;
@@ -122,19 +123,27 @@ section {
 }
 
 .navbar li a,
-.navbar li span {
+.navbar li span,
+.navbar li button {
     display: block;
     color: var(--col-text-w1);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     float: left;
+    border: none;
+    background-color: transparent;
+    top: 0;
 }
 
-.navbar li a.fab {
+.navbar li a.fab,
+.navbar li a.fas {
     float: right;
+    position: relative;
 }
-.navbar li a.fab::before {
+
+.navbar li a.fab::before,
+.navbar li a.fas:before {
     font-size: 28px;
     position: relative;
     bottom: 5.5px;
@@ -156,6 +165,61 @@ section {
     transition: background ease-in-out .2s, color ease-in-out .2s;
 }
 
+.navbar li a.fas input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    opacity: 0;
+}
+
+.navbar:not(:has(li a.fas input:checked)) li:has(a.fab, a.fas) {
+    transform: translate(310px, 0);
+    transition: transform 0.5s ease-in-out;
+    display: block;
+}
+.navbar:has(li a.fas input:checked) li:has(a.fab, a.fas) {
+    transform: translate(0, 0);
+    transition: transform 0.5s ease-in-out;
+    display: block;
+}
+
+@media(max-width: 700px) {
+    .navbar:not(:has(li a.fas input:checked)) li:has(a.fab, a.fas) {
+        transform: translate(calc(86vw - 8px), 0);
+        transition: transform 0.5s ease-in-out;
+        top: 0;
+    }
+    .navbar:not(:has(li a.fas input:checked)) li:has(a.fab) {
+        pointer-events: none;
+        position: relative;
+    }
+    .navbar:not(:has(li a.fas input:checked)) li:has(a.fas) {
+        position: absolute;
+    }
+    .navbar:not(:has(li a.fas input:checked)) li:not(:has(a.fab, a.fas)) {
+        transform: translate(-0, 0);
+        transition: transform 0.5s ease-in-out;
+        display: block;
+    }
+
+    .navbar:has(li a.fas input:checked) li:has(a.fas) {
+        position: absolute;
+    }
+    .navbar:has(li a.fas input:checked) li:not(:has(a.fab, a.fas)) {
+        transform: translate(calc(-86vw + 8px), 0);
+        transition: transform 0.5s ease-in-out;
+        animation: setAbsolute 0s 0.25s forwards;
+        display: block;
+    }
+
+    @keyframes setAbsolute { to { position: absolute;} }
+    @keyframes setRelative { to { position: relative;} }
+}
+
+
 .title {
     width: 100%;
     bottom: 60%;
@@ -163,12 +227,13 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .title h1 {
     display: block;
     color: var(--col-text-w1);
-    font-size: 4rem;
+    font-size: min(calc(16px + 5vw), 4rem);
     margin-bottom: 16px;
     text-shadow: 5px 0 5px var(--col-shadow);
 }
@@ -176,7 +241,7 @@ section {
 .title h2 {
     display: block;
     color: var(--col-text-o1);
-    font-size: 1.8rem;
+    font-size: min(calc(8px + 2vw), 1.8rem);
     margin-top: 0;
     text-shadow: 3px 0 3px var(--col-shadow);
 }
@@ -187,7 +252,7 @@ section {
     color: var(--col-text-b1);
     overflow-wrap: break-word;
     border-radius: 8px;
-    margin: 4rem;
+    margin: min(3vw, 4rem);
     margin-top: 0;
     padding: .5rem;
     position: relative;
@@ -197,6 +262,10 @@ section {
 
 .descbox a {
     color: var(--col-text-o1);
+}
+
+.descbox img {
+    max-width: 100%;
 }
 
 .descbox a:hover {
@@ -222,19 +291,19 @@ section {
 .grid-container {
     display: grid;
     padding: 30px 30px;
-    grid-template-columns: repeat(auto-fit, minmax(calc(250px + 1rem), calc(250px + 1rem)));
+    grid-template-columns: repeat(auto-fit, minmax(calc(250px + 1rem), 1fr));
     grid-gap: 32px;
 }
 
 .project {
-    width: 250px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     margin: 0;
 }
 
 .project {
     min-width: inherit;
-    min-width: inherit;
+    width: inherit;
     text-decoration: none;
     border-radius: 8px;
     border-color: transparent;
@@ -270,7 +339,7 @@ section {
 }
 
 .project img {
-    width: inherit;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }

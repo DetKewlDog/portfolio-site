@@ -9,7 +9,12 @@ export default function AnimatedLink({ to, children, dir }) {
                 e.preventDefault();
                 if (!document.startViewTransition || window.location.pathname === to) return navigate(to);
                 document.documentElement.classList.add(dir);
-                try { await document.startViewTransition(() => navigate(to)).finished; }
+				try {
+					await document.startViewTransition(() => {
+						navigate(to);
+						document.documentElement.scrollTo(0, 0);
+					}).finished;
+				}
                 catch { navigate(to) }
                 finally { document.documentElement.classList.remove(dir); }
 		    }}
