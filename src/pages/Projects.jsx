@@ -4,6 +4,12 @@ export default function Projects() {
     return (
         <section id="projects">
             <div className="grid-container">
+                <Project title="Portfolio Website"
+                    url="https://github.com/DetKewlDog/portfolio-site"
+                    img="images/projects/portfolio-site.png"
+                >
+                    This portfolio website's repo! Built using ReactJS. Feel free to star it on GitHub!
+                </Project>
                 <Project title="Forgescape"
                     url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
                     img="images/projects/forgescape.png"
