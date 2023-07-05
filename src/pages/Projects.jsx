@@ -38,6 +38,13 @@ export default function Projects() {
                     Monitor for debugging Unity player logs/builds. Can be run on a LAN.
                     Used to be a Python CLI app, but has been rewritten it using Python & React.
                 </Project>
+                <Project title="Route Reverse Engineer"
+                    url="https://route-reverse-engineer.netlify.app"
+                    img="images/projects/route-reverse-engineer.png"
+                >
+                    Finds all possible starting points that would result in routes with a
+                    given walking distance that reach the coordinates of a given destination.
+                </Project>
                 <Project title="Songsterr Banner Remover"
                     url="https://github.com/DetKewlDog/songsterr-banner-remover"
                     img="images/projects/songsterr-banner-remover.png"
@@ -104,13 +111,6 @@ export default function Projects() {
                 >
                     Program that searches a color palette on the internet, and swaps the
                     palette of a given image with the new palette based on color similarity.
-                </Project>
-                <Project title="Route Reverse Engineer"
-                    url="https://gist.github.com/DetKewlDog/dddda4c4efd96dbbe2ced7df27c51350"
-                    img="images/projects/route-reverse-engineer.png"
-                >
-                    Finds all possible starting points that would result in routes with a
-                    given walking distance that reach the coordinates of a given destination.
                 </Project>
                 <Project title="Nokia Cellphone FC Font Generator"
                     url="https://gist.github.com/DetKewlDog/0ffb3adaeccec0643a66d6c2e71073e1"
