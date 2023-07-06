@@ -42,8 +42,8 @@ export default function Projects() {
                     url="https://route-reverse-engineer.netlify.app"
                     img="images/projects/route-reverse-engineer.png"
                 >
-                    Finds all possible starting points that would result in routes with a
-                    given walking distance that reach the coordinates of a given destination.
+                    Finds all possible starting points that would result in routes with a given
+                    walking distance that would reach the coordinates of a given destination.
                 </Project>
                 <Project title="Songsterr Banner Remover"
                     url="https://github.com/DetKewlDog/songsterr-banner-remover"
