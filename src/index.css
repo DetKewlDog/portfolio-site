@@ -82,6 +82,7 @@ body {
     scroll-behavior: smooth;
     position: relative;
     z-index: 1;
+    background-color: var(--col-bg1);
 }
 
 body:before,
