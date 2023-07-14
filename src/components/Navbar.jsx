@@ -12,7 +12,7 @@ export default function Navbar() {
                 <li><a target="_blank" className="fab fa-reddit"    href="https://www.reddit.com/user/DetKewlDog"   ></a></li>
                 <li><a target="_blank" className="fab fa-discord"   href="https://discord.com/invite/F7VQ2hwfyw"    ></a></li>
                 <li><a target="_blank" className="fab fa-youtube"   href="https://youtube.com/@autumnfire_dev"      ></a></li>
-                <li><a target="_blank" className="fab fa-github" href="https://github.com/DetKewlDog"            ></a></li>
+                <li><a target="_blank" className="fab fa-github"    href="https://github.com/DetKewlDog"            ></a></li>
                 <li>
                     <a className="fas fa-bars">
                         <input type="checkbox" />
