@@ -189,6 +189,7 @@ section {
     left: -5px;
     opacity: 0;
     z-index: 10;
+    cursor: pointer;
 }
 
 .navbar:not(:has(li a.fas input:checked)) li:has(a.fab, a.fas) {

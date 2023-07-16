@@ -1,23 +1,20 @@
 import AnimatedLink from "./AnimatedLink";
+import SocialLink from "./SocialLink";
 
 export default function Navbar() {
     return (
         <div className="navbar">
             <ul>
                 <li><span className="unselectable"><b>DetKewlDog</b></span></li>
-                <li><AnimatedLink dir="<-" to="/">Home</AnimatedLink></li>
-                <li><AnimatedLink dir="->" to="/projects">Projects</AnimatedLink></li>
+                <AnimatedLink to="/">Home</AnimatedLink>
+                <AnimatedLink to="/projects">Projects</AnimatedLink>
 
-                <li><a target="_blank" className="fab fa-steam"     href="https://steamcommunity.com/id/DetKewlDog/"></a></li>
-                <li><a target="_blank" className="fab fa-reddit"    href="https://www.reddit.com/user/DetKewlDog"   ></a></li>
-                <li><a target="_blank" className="fab fa-discord"   href="https://discord.com/invite/F7VQ2hwfyw"    ></a></li>
-                <li><a target="_blank" className="fab fa-youtube"   href="https://youtube.com/@autumnfire_dev"      ></a></li>
-                <li><a target="_blank" className="fab fa-github"    href="https://github.com/DetKewlDog"            ></a></li>
-                <li>
-                    <a className="fas fa-bars">
-                        <input type="checkbox" />
-                    </a>
-                </li>
+                <SocialLink icon="steam"     url="https://steamcommunity.com/id/DetKewlDog/" />
+                <SocialLink icon="reddit"    url="https://www.reddit.com/user/DetKewlDog"    />
+                <SocialLink icon="discord"   url="https://discord.com/invite/F7VQ2hwfyw"     />
+                <SocialLink icon="youtube"   url="https://youtube.com/@autumnfire_dev"       />
+                <SocialLink icon="github"    url="https://github.com/DetKewlDog"             />
+                <li><a className="fas fa-bars"><input type="checkbox" /></a></li>
             </ul>
         </div>
     );
