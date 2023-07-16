@@ -1,8 +1,6 @@
 import { useNavigate} from 'react-router-dom';
 
-/*
-THANK YOU DOT FOR THE TRANSITIONS
-*/
+// THANK YOU DOT FOR THE TRANSITIONS
 export default function AnimatedLink({ to, children }) {
 	const navigate = useNavigate();
 	const handleClick = async(e) => {
