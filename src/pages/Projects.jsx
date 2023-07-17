@@ -50,7 +50,7 @@ export default function Projects() {
                     img="images/projects/netlify-alerts.png"
                 >
                     Endpoint for outgoing Netlify deploy webhooks that pushes
-                    desktop notifications when Netlify deploys your website.
+                    Desktop notifications when Netlify deploys your website.
                 </Project>
                 <Project title="Songsterr Banner Remover"
                     url="https://github.com/DetKewlDog/songsterr-banner-remover"
