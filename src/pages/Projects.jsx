@@ -45,6 +45,13 @@ export default function Projects() {
                     Finds all possible starting points that would result in routes with a given
                     walking distance that would reach the coordinates of a given destination.
                 </Project>
+                <Project title="Netlify Alerts"
+                    url="https://github.com/DetKewlDog/netlify-alerts"
+                    img="images/projects/netlify-alerts.png"
+                >
+                    Endpoint for outgoing Netlify deploy webhooks that pushes
+                    Desktop notifications when Netlify deploys your website.
+                </Project>
                 <Project title="Songsterr Banner Remover"
                     url="https://github.com/DetKewlDog/songsterr-banner-remover"
                     img="images/projects/songsterr-banner-remover.png"
