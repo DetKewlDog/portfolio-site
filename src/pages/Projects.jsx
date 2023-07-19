@@ -46,7 +46,7 @@ export default function Projects() {
                     walking distance that would reach the coordinates of a given destination.
                 </Project>
                 <Project title="Netlify Alerts"
-                    url="https://github.com/DetKewlDog/netlify-alerts"
+                    url="https://netlify-alerts.detkewldog.repl.co"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131173674750328886/netlify-alerts.png"
                 >
                     Endpoint for outgoing Netlify deploy webhooks that pushes
