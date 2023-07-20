@@ -14,7 +14,11 @@ export default function Navbar() {
                 <SocialLink icon="discord"   url="https://discord.com/invite/F7VQ2hwfyw"     />
                 <SocialLink icon="youtube"   url="https://youtube.com/@autumnfire_dev"       />
                 <SocialLink icon="github"    url="https://github.com/DetKewlDog"             />
-                <li><a className="fas fa-bars"><input type="checkbox" /></a></li>
+                <li>
+                    <a className="fas fa-bars" aria-hidden={false} name="Socials">
+                        <input type="checkbox" />
+                    </a>
+                </li>
             </ul>
         </div>
     );

@@ -1,0 +1,16 @@
+{
+    "short_name": "DetKewlDog",
+    "name": "DetKewlDog",
+    "icons": [
+      {
+        "src": "https://cdn.discordapp.com/attachments/801426473059614730/1131172395793780757/favicon.png?",
+        "type": "image/png",
+        "sizes": "128x128"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
+  

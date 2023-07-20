@@ -1,7 +1,9 @@
 export default class GitHubAccess {
     static async fetchAboutMe() {
         try {
-            const response = await fetch('https://api.github.com/repos/DetKewlDog/DetKewlDog/contents/README.md');
+            const response = await fetch('https://api.github.com/repos/DetKewlDog/DetKewlDog/contents/README.md', {
+                Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+            });
             if (!response.ok) {
                 return 'Error fetching about me.';
             }

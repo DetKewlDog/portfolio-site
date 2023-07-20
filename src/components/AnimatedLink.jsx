@@ -18,7 +18,7 @@ export default function AnimatedLink({ to, children }) {
 	}
 	return (
 		<li>
-			<a href={to} onClick={handleClick}>
+			<a href={to} onClick={handleClick} name={children}>
 				{children}
 			</a>
 		</li>
