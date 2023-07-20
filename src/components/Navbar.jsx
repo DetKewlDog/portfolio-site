@@ -15,7 +15,7 @@ export default function Navbar() {
                 <SocialLink icon="youtube"   url="https://youtube.com/@autumnfire_dev"       />
                 <SocialLink icon="github"    url="https://github.com/DetKewlDog"             />
                 <li>
-                    <a className="fas fa-bars" aria-hidden={false} name="Socials">
+                    <a className="fas fa-bars" aria-hidden="false" name="Socials">
                         <input type="checkbox" />
                     </a>
                 </li>
