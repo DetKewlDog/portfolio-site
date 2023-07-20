@@ -252,6 +252,7 @@ section {
     font-size: min(calc(16px + 5vw), 4rem);
     margin-bottom: 16px;
     text-shadow: 5px 0 5px var(--col-shadow);
+    font-weight: bold;
 }
 
 .title h2 {
@@ -260,6 +261,7 @@ section {
     font-size: min(calc(8px + 2vw), 1.8rem);
     margin-top: 0;
     text-shadow: 3px 0 3px var(--col-shadow);
+    font-weight: bold;
 }
 
 .descbox {
@@ -290,10 +292,12 @@ section {
 
 .descbox h1 {
     text-shadow: 3px 0 3px var(--col-shadow);
+    font-weight: bold;
 }
 
 .descbox h2 {
     text-shadow: 2px 0 2px var(--col-shadow);
+    font-weight: bold;
 }
 
 .descbox p {
