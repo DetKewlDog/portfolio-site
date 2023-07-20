@@ -1,14 +1,7 @@
-import { useEffect } from "react";
-
 import AnimatedLink from "./AnimatedLink";
 import SocialLink from "./SocialLink";
 
 export default function Navbar() {
-
-    useEffect(() => {
-        document.querySelectorAll('[aria-hidden]')
-            .forEach(i => i.ariaHidden = false);
-    }, []);
 
     return (
         <div className="navbar">
