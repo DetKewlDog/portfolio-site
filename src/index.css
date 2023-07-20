@@ -96,7 +96,7 @@ body:before,
 }
 
 body:before {
-    background: url('https://cdn.discordapp.com/attachments/801426473059614730/1131172510294098001/bg.png') no-repeat center/cover var(--col-bg2);
+    background: url('https://cdn.discordapp.com/attachments/801426473059614730/1131586879070945330/bg.webp') no-repeat center/cover var(--col-bg2);
 }
 
 .overlay:before {
