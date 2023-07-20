@@ -5,6 +5,7 @@ export default function SocialLink({ icon, url }) {
                 name={icon}
                 className={`fab fa-${icon}`}
                 href={url}
+                aria-hidden={false}
             />
         </li>  
     );
