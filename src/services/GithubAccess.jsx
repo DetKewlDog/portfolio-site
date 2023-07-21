@@ -10,7 +10,6 @@ export default class GitHubAccess {
             const timestamp = new Date().getTime();
             return decodeURI(data.replace('" alt="Things I\'d Like to Learn"', `?${timestamp}" alt="Things I\'d Like to Learn"`));
         } catch (error) {
-            console.error(error)
             return 'Error fetching about me.';
         }
     }
