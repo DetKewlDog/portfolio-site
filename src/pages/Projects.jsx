@@ -2,7 +2,7 @@ import Project from "../components/Project";
 
 export default function Projects() {
     return (
-        <section id="projects">
+        <>
             <div className="grid-container">
                 <Project title="Portfolio Website"
                     url="https://github.com/DetKewlDog/portfolio-site"
@@ -126,6 +126,6 @@ export default function Projects() {
                     Python program to convert text to the Nokia Cellphone FC font (in image form).
                 </Project>
             </div>
-        </section>
+        </>
     );
 }

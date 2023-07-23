@@ -9,15 +9,23 @@ import Projects from './pages/Projects';
 
 import Navbar from './components/Navbar';
 
+const routes = [
+    { path: '/',            element: (<Home />      ) },
+    { path: '/projects',    element: (<Projects />  ) },
+];
+
 createRoot(document.getElementById("root")).render(
     <div className="overlay">
         <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path='/'         element={<Home />       } />
-                <Route path='/projects' element={<Projects />   } />
-                <Route path='*'         element={<Home />       } />
-            </Routes>
+            <Navbar routes={routes} />
+            <section id="content">
+                <Routes>
+                    {routes.map((route, index) => (
+                        <Route key={index} {...route} />
+                    ))}
+                    <Route path='*' element={<Home />} />
+                </Routes>
+            </section>
         </BrowserRouter>
     </div>
 );

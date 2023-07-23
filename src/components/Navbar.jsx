@@ -1,15 +1,28 @@
 import AnimatedLink from "./AnimatedLink";
 import SocialLink from "./SocialLink";
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({ routes }) {
+    let location = useLocation();
+    let [links, setLinks] = useState(routes.map(route => ({
+        to: route.path,
+        text: route.element.type.name
+    })));
+
+    useEffect(() => {
+        const currentLink = links.findIndex(link => link.to === location.pathname);
+        setLinks(links.map((link, index) => (
+            { ...link, dir: index < currentLink ? '<-' : '->' }
+        )));
+    }, [location]);
 
     return (
         <nav>
             <div className="navbar">
                 <ul>
                     <li><span className="unselectable"><b>DetKewlDog</b></span></li>
-                    <AnimatedLink to="/">Home</AnimatedLink>
-                    <AnimatedLink to="/projects">Projects</AnimatedLink>
+                    {links.map((link, index) => ( <AnimatedLink key={index} {...link} /> ))}
 
                     <SocialLink icon="steam"     url="https://steamcommunity.com/id/DetKewlDog/" />
                     <SocialLink icon="reddit"    url="https://www.reddit.com/user/DetKewlDog"    />
