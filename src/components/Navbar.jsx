@@ -25,7 +25,6 @@ export default function Navbar({ routes }) {
         <nav>
             <div className="navbar">
                 <ul>
-                    <li><span className="unselectable"><b>DetKewlDog</b></span></li>
                     {links.map((link, index) => ( <AnimatedLink key={index} {...link} /> ))}
 
                     <SocialLink icon="steam"     url="https://steamcommunity.com/id/DetKewlDog/" />

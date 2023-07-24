@@ -11,9 +11,9 @@ import Music from './pages/Music';
 import Navbar from './components/Navbar';
 
 const routes = [
-    { path: '/',            element: (<Home />      ), text: 'Home'     },
-    { path: '/projects',    element: (<Projects />  ), text: 'Projects' },
-    { path: '/music',       element: (<Music />     ), text: 'Music'    },
+    { path: '/',            element: (<Home />      ), text: 'DetKewlDog'   },
+    { path: '/projects',    element: (<Projects />  ), text: 'Projects'     },
+    { path: '/music',       element: (<Music />     ), text: 'Music'        },
 ];
 
 createRoot(document.getElementById("root")).render(
