@@ -398,15 +398,23 @@ section {
     opacity: 0;
 }
 
+#music {
+    display: flex;
+}
+
 #music > section {
     width: 50%;
 }
 #music > section:nth-of-type(1) {
-    float: left;
     margin-top: 25px;
 }
-#music > section:nth-of-type(2) {
-    float: right;
+@media(max-width: 700px) {
+    #music {
+        flex-direction: column-reverse;
+    }
+    #music > section {
+        width: 100%;
+    }
 }
 
 .list-container {

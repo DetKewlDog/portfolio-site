@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useAudio = url => {
+const useAudio = (url) => {
     const [audio] = useState(new Audio(url));
     const [playing, setPlaying] = useState(false);
     const [time, setTime] = useState(0);
@@ -29,7 +29,7 @@ const useAudio = url => {
     return [playing, toggle, duration, time, updateTime];
 };
 
-export default function Track({ title, url }) {
+export default function Track({ title, date, url }) {
     const [playing, toggle, duration, time, setTime] = useAudio(url);
     const [style, setStyle] = useState('');
 
@@ -44,7 +44,8 @@ export default function Track({ title, url }) {
                 <div className='track'>
                     <button onClick={toggle} className={`fas fa-${playing ? 'pause' : 'play'}`}></button>
                     <div>
-                        <input type="range"
+                        <label for={title}>{date}</label>
+                        <input id={title} type="range"
                             min='0'
                             value={time}
                             max={Math.floor(duration)}

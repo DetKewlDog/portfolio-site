@@ -6,10 +6,22 @@ export default function Music() {
         <section id='music'>
             <section>
                 <div className='list-container'>
-                    <Track title="Forgescape - Night" url="https://cdn.discordapp.com/attachments/912581812931416134/1132915973943468124/forgescape_night.mp3" />
-                    <Track title="Forgescape - Rain" url="https://cdn.discordapp.com/attachments/912581812931416134/1132915988808089650/forgescape_rain.mp3" />
-                    <Track title="Untitled Track" url="https://cdn.discordapp.com/attachments/912581812931416134/1132916008449998889/untitled_track.mp3" />
-                    <Track title="No! My Substance - Boss Fight" url="https://cdn.discordapp.com/attachments/912581812931416134/1132916051378716683/nms_boss.mp3" />
+                    <Track title="Forgescape - Night"
+                        date="11/09/2022"
+                        url="https://cdn.discordapp.com/attachments/801426473059614730/1132943519590395955/forgescape_night.ogg"
+                    />
+                    <Track title="Forgescape - Rain"
+                        date="07/11/2022"
+                        url="https://cdn.discordapp.com/attachments/801426473059614730/1132943519259037737/forgescape_rain.ogg"
+                    />
+                    <Track title="Untitled Track"
+                        date="28/04/2023"
+                        url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518424379432/untitled_track.ogg"
+                    />
+                    <Track title="No! My Substance - Boss Fight"
+                        date="18/06/2023"
+                        url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518881566781/nms_boss.ogg"
+                    />
                 </div>
             </section>
             <section>
