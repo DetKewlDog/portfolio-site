@@ -22,7 +22,7 @@ export default function Home() {
                 </div>
            </header>
 
-            <Descbox>{aboutMe}</Descbox>
+            <Descbox useMD>{aboutMe}</Descbox>
             <br />
         </>
     );

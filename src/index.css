@@ -9,6 +9,7 @@
     --col-nav2: #292929;
 
     --col-text-w1: #FFFFFF;
+    --col-text-w2: #CCCCCC;
 
     --col-text-b1: #111111;
     --col-text-b2: #626262;
@@ -42,24 +43,24 @@ body.animate::before {
     animation-fill-mode: forwards;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: var(--col-bg2);
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--col-bg1);
     border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background-color: var(--col-text-b2);
 }
 
-body::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:active {
     background-color: var(--col-bg1);
 }
 
@@ -395,4 +396,125 @@ section {
 
 .project:active:after {
     opacity: 0;
+}
+
+#music > section {
+    width: 50%;
+}
+#music > section:nth-of-type(1) {
+    float: left;
+    margin-top: 25px;
+}
+#music > section:nth-of-type(2) {
+    float: right;
+}
+
+.list-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin: 30px;
+}
+
+.track button {
+    width: 64px;
+    height: 64px;
+    background-color: var(--col-text-o1);
+    border-radius: 20px;
+    border: none;
+    font-size: 24px;
+    color: var(--col-text-b1);
+    padding: 0;
+    margin: 0;
+}
+.track button:hover {
+    background-color: var(--col-text-o2);
+    transform: translateY(-4px);
+    transition: background-color ease-in-out 0.2s, transform ease-in-out 0.2s;
+}
+.track button:not(:hover) {
+    background-color: var(--col-text-o1);
+    transform: translateY(4px);
+    transition: background-color ease-in-out 0.2s, transform ease-in-out 0.2s;
+}
+
+.track > div {
+    display: inline-block;
+    width: calc(100% - 64px - 20px);
+    margin: 0;
+    margin-left: 10px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 6px;
+    background: var(--col-text-w2);
+}
+input[type=range]:hover {
+    height: 12px;
+    transition: height .2s ease-in-out;
+}
+input[type=range]:not(:hover) {
+    height: 6px;
+    transition: height .2s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: var(--col-text-o1);
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    background-color: var(--col-text-o1);
+    box-shadow: 0 0 0 3px var(--col-text-o1);
+}
+
+input[type=range]:hover::-moz-range-thumb {
+    background-color: var(--col-text-o1);
+    box-shadow: 0 0 0 3px var(--col-text-o1);
+}
+
+.track span:nth-of-type(1) {
+    margin: 0;
+    float: left;
+}
+.track span:nth-of-type(2) {
+    margin: 0;
+    float: right;
+}
+
+.list-container > .project:after {
+    top: -600%;
+    left: -120%;
+    width: 125%;
+    height: 500%;
+}
+
+.list-container > .project:hover:after {
+    top: 75%;
+    left: 90%;
+}
+
+.list-container .descbox {
+    padding: 1rem;
 }

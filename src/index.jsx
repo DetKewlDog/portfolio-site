@@ -6,12 +6,14 @@ import './index.css';
 
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Music from './pages/Music';
 
 import Navbar from './components/Navbar';
 
 const routes = [
     { path: '/',            element: (<Home />      ) },
     { path: '/projects',    element: (<Projects />  ) },
+    { path: '/music',       element: (<Music />     ) },
 ];
 
 createRoot(document.getElementById("root")).render(
