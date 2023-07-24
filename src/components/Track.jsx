@@ -38,25 +38,25 @@ export default function Track({ title, date, url }) {
     }, [time]);
 
     return (
-        <section className="descbox project">
-            <header>
-                <h1>{title}</h1>
-                <div className='track'>
-                    <button onClick={toggle} className={`fas fa-${playing ? 'pause' : 'play'}`}></button>
-                    <div>
-                        <label for={title}>{date}</label>
-                        <input id={title} type="range"
-                            min='0'
-                            value={time}
-                            max={Math.floor(duration)}
-                            onChange={e => setTime(e.target.value)}
-                            style={{ background: style }}
-                        />
-                        <span>{`${time      / 60 | 0}`.padStart(2, '0')  }:{`${time     % 60 | 0}`.padStart(2, '0')}</span>
-                        <span>{`${duration  / 60 | 0}`.padStart(2, '0')  }:{`${duration % 60 | 0}`.padStart(2, '0')}</span>
-                    </div>
+        <div className="descbox project" name={title}>
+            <h1>{title}</h1>
+            <div className='track'>
+                <button onClick={toggle} aria-hidden="false" name={playing ? 'pause' : 'play'}>
+                    <span className={`fas fa-${playing ? 'pause' : 'play'}`}></span>
+                </button>
+                <div aria-label={date}>
+                    <label for={title}>{date}</label>
+                    <input id={title} type="range"
+                        min='0'
+                        value={time}
+                        max={Math.floor(duration)}
+                        onChange={e => setTime(e.target.value)}
+                        style={{ background: style }}
+                    />
+                    <span>{`${time      / 60 | 0}`.padStart(2, '0')  }:{`${time     % 60 | 0}`.padStart(2, '0')}</span>
+                    <span>{`${duration  / 60 | 0}`.padStart(2, '0')  }:{`${duration % 60 | 0}`.padStart(2, '0')}</span>
                 </div>
-            </header>
-        </section>
+            </div>
+        </div>
     );
 }

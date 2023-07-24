@@ -138,7 +138,7 @@ section {
 }
 
 .navbar li a,
-.navbar li span,
+.navbar li > span,
 .navbar li button {
     display: block;
     color: var(--col-text-w1);
@@ -151,20 +151,19 @@ section {
     top: 0;
 }
 
-.navbar li a.fab,
-.navbar li a.fas {
+.navbar li a[aria-label] {
     float: right;
     position: relative;
 }
 
-.navbar li a.fab::before,
-.navbar li a.fas:before {
+.navbar li a .fab::before,
+.navbar li a .fas:before {
     font-size: 28px;
     position: relative;
     bottom: 5.5px;
 }
 
-.navbar li span {
+.navbar li > span {
     font-size: 1.2rem;
     padding: 16px 14px;
     padding-right: 24px;
@@ -180,7 +179,7 @@ section {
     transition: background ease-in-out .2s, color ease-in-out .2s;
 }
 
-.navbar li a.fas input {
+.navbar li a input {
     display: block;
     width: 100%;
     height: 100%;
@@ -192,41 +191,41 @@ section {
     cursor: pointer;
 }
 
-.navbar:not(:has(li a.fas input:checked)) li:has(a.fab, a.fas) {
+.navbar:not(:has(li a input:checked)) li:has(a .fab, a .fas) {
     transform: translate(310px, 0);
     transition: transform 0.5s ease-in-out;
     display: block;
 }
-.navbar:has(li a.fas input:checked) li:has(a.fab, a.fas) {
+.navbar:has(li a input:checked) li:has(a .fab, a .fas) {
     transform: translate(0, 0);
     transition: transform 0.5s ease-in-out;
     display: block;
 }
 
 @media(max-width: 700px) {
-    .navbar:not(:has(li a.fas input:checked)) li:has(a.fab, a.fas) {
+    .navbar:not(:has(li a input:checked)) li:has(a .fab, a .fas) {
         transform: translate(calc(86vw - 8px), 0);
         transition: transform 0.5s ease-in-out;
         top: 0;
     }
-    .navbar:not(:has(li a.fas input:checked)) li:has(a.fab) {
+    .navbar:not(:has(li a input:checked)) li:has(a .fab) {
         pointer-events: none;
         user-select: none;
         position: relative;
     }
-    .navbar:not(:has(li a.fas input:checked)) li:has(a.fas) {
+    .navbar:not(:has(li a input:checked)) li:has(a .fas) {
         position: absolute;
     }
-    .navbar:not(:has(li a.fas input:checked)) li:not(:has(a.fab, a.fas)) {
+    .navbar:not(:has(li a input:checked)) li:not(:has(a .fab, a .fas)) {
         transform: translate(-0, 0);
         transition: transform 0.5s ease-in-out;
         display: block;
     }
 
-    .navbar:has(li a.fas input:checked) li:has(a.fas) {
+    .navbar:has(li a input:checked) li:has(a .fas) {
         position: absolute;
     }
-    .navbar:has(li a.fas input:checked) li:not(:has(a.fab, a.fas)) {
+    .navbar:has(li a input:checked) li:not(:has(a .fab, a .fas)) {
         transform: translate(calc(-86vw + 8px), 0);
         transition: transform 0.5s ease-in-out;
         animation: setAbsolute 0s 0.25s forwards;
@@ -400,20 +399,22 @@ section {
 
 #music {
     display: flex;
+    width: 100%;
 }
 
-#music > section {
+#music > div {
     width: 50%;
 }
-#music > section:nth-of-type(1) {
+#music > div:nth-of-type(2) {
     margin-top: 25px;
 }
 @media(max-width: 700px) {
     #music {
         flex-direction: column-reverse;
+
     }
-    #music > section {
-        width: 100%;
+    #music > div {
+        width: auto;
     }
 }
 
@@ -423,6 +424,26 @@ section {
     flex-direction: column;
     row-gap: 32px;
     margin: 30px;
+}
+
+.list-container > .project {
+    width: auto;
+}
+
+.list-container > .project:after {
+    top: -600%;
+    left: -120%;
+    width: 125%;
+    height: 500%;
+}
+
+.list-container > .project:hover:after {
+    top: 75%;
+    left: 90%;
+}
+
+.list-container .descbox {
+    padding: 1rem;
 }
 
 .track button {
@@ -506,27 +527,11 @@ input[type=range]:hover::-moz-range-thumb {
     box-shadow: 0 0 0 3px var(--col-text-o1);
 }
 
-.track span:nth-of-type(1) {
+.track div span:nth-of-type(1) {
     margin: 0;
     float: left;
 }
-.track span:nth-of-type(2) {
+.track div span:nth-of-type(2) {
     margin: 0;
     float: right;
-}
-
-.list-container > .project:after {
-    top: -600%;
-    left: -120%;
-    width: 125%;
-    height: 500%;
-}
-
-.list-container > .project:hover:after {
-    top: 75%;
-    left: 90%;
-}
-
-.list-container .descbox {
-    padding: 1rem;
 }

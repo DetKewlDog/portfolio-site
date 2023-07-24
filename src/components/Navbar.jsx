@@ -34,8 +34,10 @@ export default function Navbar({ routes }) {
                     <SocialLink icon="youtube"   url="https://youtube.com/@autumnfire_dev"       />
                     <SocialLink icon="github"    url="https://github.com/DetKewlDog"             />
                     <li>
-                        <a className="fas fa-bars" aria-hidden="false" name="Socials">
-                            <input type="checkbox" />
+                        <a aria-label='Socials' name="Socials" aria-hidden="false">
+                            <label for='socials' style={{fontSize: '0'}}>Socials</label>
+                            <input id='socials' type="checkbox" aria-hidden="false" />
+                            <span className="fas fa-bars"></span>
                         </a>
                     </li>
                 </ul>
