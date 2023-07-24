@@ -41,7 +41,7 @@ export default function Track({ title, date, url }) {
         <div className="descbox project" name={title}>
             <h1>{title}</h1>
             <div className='track'>
-                <button onClick={toggle} aria-hidden="false" name={playing ? 'pause' : 'play'}>
+                <button onClick={toggle} aria-hidden="false" aria-label={playing ? 'pause' : 'play'}>
                     <span className={`fas fa-${playing ? 'pause' : 'play'}`}></span>
                 </button>
                 <div aria-label={date}>
