@@ -1,7 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 
-import './index.css';
-
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Music from './pages/Music';
@@ -16,8 +14,8 @@ export const Router = (includeDefault = true) => {
     const router = (routes.map((route, index) => (
         <Route key={index} {...route} />
     )));
-    if (includeDefault) router.push(<Route key={router.length} path='*' element={<Home />} />);
-    return (
-        <Routes>{router}</Routes>
-    );
+    if (includeDefault) {
+        router.push(<Route key={router.length} path='*' element={<Home />} />);
+    }
+    return (<Routes>{router}</Routes>);
 };
