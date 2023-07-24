@@ -38,7 +38,7 @@ export default function Track({ title, date, url }) {
     }, [time]);
 
     return (
-        <a className="descbox project" target="_blank">
+        <section className="descbox project">
             <header>
                 <h1>{title}</h1>
                 <div className='track'>
@@ -57,6 +57,6 @@ export default function Track({ title, date, url }) {
                     </div>
                 </div>
             </header>
-        </a>
+        </section>
     );
 }

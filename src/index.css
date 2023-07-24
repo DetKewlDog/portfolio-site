@@ -440,6 +440,7 @@ section {
     background-color: var(--col-text-o2);
     transform: translateY(-4px);
     transition: background-color ease-in-out 0.2s, transform ease-in-out 0.2s;
+    cursor: pointer;
 }
 .track button:not(:hover) {
     background-color: var(--col-text-o1);
@@ -452,6 +453,9 @@ section {
     width: calc(100% - 64px - 20px);
     margin: 0;
     margin-left: 10px;
+}
+.track label {
+    pointer-events: none;
 }
 input[type=range] {
     -webkit-appearance: none;
