@@ -7,7 +7,7 @@ export default function Navbar({ routes }) {
     let location = useLocation();
     let [links, setLinks] = useState(routes.map(route => ({
         to: route.path,
-        text: route.element.type.name
+        text: route.text
     })));
 
     useEffect(() => {
