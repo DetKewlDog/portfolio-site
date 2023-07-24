@@ -12,6 +12,10 @@ export default function Navbar({ routes }) {
 
     useEffect(() => {
         const currentLink = links.findIndex(link => link.to === location.pathname);
+
+        document.querySelector('link[rel=canonical]').href = window.location.href;
+        document.querySelector('title').innerText = links[currentLink].text;
+
         setLinks(links.map((link, index) => (
             { ...link, dir: index < currentLink ? '<-' : '->' }
         )));

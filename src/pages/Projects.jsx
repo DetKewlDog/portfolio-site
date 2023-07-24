@@ -1,14 +1,8 @@
-import { Helmet } from "react-helmet";
 import Project from "../components/Project";
 
 export default function Projects() {
     return (
         <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Projects</title>
-                <link rel="canonical" href="https://detkewldog.netlify.app/projects" />
-            </Helmet>
             <div className="grid-container">
                 <Project title="Portfolio Website"
                     url="https://github.com/DetKewlDog/portfolio-site"

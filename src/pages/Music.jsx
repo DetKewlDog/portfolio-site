@@ -1,15 +1,9 @@
-import { Helmet } from "react-helmet";
 import Descbox from '../components/Descbox';
 import Track from "../components/Track";
 
 export default function Music() {
     return (
         <section id='music'>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Music</title>
-                <link rel="canonical" href="https://detkewldog.netlify.app/music" />
-            </Helmet>
             <section>
                 <div className='list-container'>
                     <Track title="Forgescape - Night"
