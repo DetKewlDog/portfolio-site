@@ -13,13 +13,13 @@ export default function Music() {
                     date="07/11/2022"
                     url="https://cdn.discordapp.com/attachments/801426473059614730/1132943519259037737/forgescape_rain.ogg"
                 />
+                <Track title="Forgescape - Mother Slime"
+                    date="18/06/2023"
+                    url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518881566781/nms_boss.ogg"
+                />
                 <Track title="Untitled Track"
                     date="28/04/2023"
                     url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518424379432/untitled_track.ogg"
-                />
-                <Track title="No! My Substance - Boss Fight"
-                    date="18/06/2023"
-                    url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518881566781/nms_boss.ogg"
                 />
             </div>
             <Descbox>
