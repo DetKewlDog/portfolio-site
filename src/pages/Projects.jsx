@@ -17,6 +17,13 @@ export default function Projects() {
                     2D TopDown Adventure game where you are able to fight monsters,
                     obtain powerful items and explore biomes in a procedurally generated world.
                 </Project>
+                <Project title="Harvest Hero"
+                    url="https://detkewldog.itch.io/harvest-hero"
+                    img="https://cdn.discordapp.com/attachments/912581812931416134/1158768708043411648/harvest-hero.png"
+                >
+                    A game where players maintain an ever-shrinking farm.
+                    Was created as part of the Ludum Dare 54 game jam.
+                </Project>
                 <Project title="BeWarehouse"
                     url="https://detkewldog.itch.io/bewarehouse"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131172793531248650/bewarehouse.png"
