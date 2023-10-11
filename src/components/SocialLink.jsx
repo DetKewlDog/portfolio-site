@@ -7,7 +7,9 @@ export default function SocialLink({ icon, url }) {
                 aria-hidden="false"
                 aria-label={icon}
             >
-                <span className={`fab fa-${icon}`}></span>
+                {icon === 'x' ?
+                    <span className='fab'>𝕏</span> :
+                    <span className={`fab fa-${icon}`}></span>}
             </a>
         </li>  
     );

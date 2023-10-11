@@ -1,7 +1,7 @@
 import { useNavigate} from 'react-router-dom';
 
 // THANK YOU DOT FOR THE TRANSITIONS
-export default function AnimatedLink({ to, text, dir }) {
+export default function NavbarLink({ to, text, dir }) {
 	const navigate = useNavigate();
 	const handleClick = async (e) => {
 		e.preventDefault();

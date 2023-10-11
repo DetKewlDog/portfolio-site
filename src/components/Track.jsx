@@ -45,7 +45,7 @@ export default function Track({ title, date, url }) {
                     <span className={`fas fa-${playing ? 'pause' : 'play'}`}></span>
                 </button>
                 <div aria-label={date}>
-                    <label for={title}>{date}</label>
+                    <label htmlFor={title}>{date}</label>
                     <input id={title} type="range"
                         min='0'
                         value={time}
