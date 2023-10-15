@@ -421,24 +421,21 @@ section {
 }
 
 .tag-container {
-    list-style-type: none;
     padding: 0px;
-    vertical-align: bottom;
     flex: 0 1 auto;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .tag {
-    padding: 4px;
-    padding-inline: 8px;
+    padding: 4px 8px;
     margin: 4px;
     float: left;
-    text-decoration: none;
     border-radius: 16px;
     overflow: hidden;
-    background: var(--col-text-o1);
-    vertical-align: bottom;
+    border-color: var(--col-text-o1);
+    color: var(--col-text-o1);
+    border-style: solid;
 }
 
 

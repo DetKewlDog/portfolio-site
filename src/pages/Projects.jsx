@@ -7,7 +7,7 @@ export default function Projects() {
                 <Project title="Portfolio Website"
                     url="https://github.com/DetKewlDog/portfolio-site"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131173797777649664/portfolio-site.png"
-                    tags={['Webdev', 'JS', 'React']}
+                    tags={['Website', 'JS', 'React']}
                 >
                     This portfolio website's repo! Built using ReactJS. Feel free to star it on GitHub!
                 </Project>
@@ -38,7 +38,7 @@ export default function Projects() {
                 <Project title="Color Workshop"
                     url="https://colorworkshop.netlify.app/"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131173031859998761/color-workshop.png"
-                    tags={['Webdev', 'JS']}
+                    tags={['Website', 'JS']}
                 >
                     Minimalistic website that allows palette organization and manipulation,
                     color related operations and image manipulation.
@@ -46,7 +46,7 @@ export default function Projects() {
                 <Project title="Red Alert Map"
                     url="https://github.com/DetKewlDog/red-alert-map"
                     img="https://cdn.discordapp.com/attachments/912581812931416134/1163030713642266624/red-alert-map.png"
-                    tags={['Webdev', 'JS', 'React']}
+                    tags={['Website', 'JS', 'React']}
                 >
                     React application that displays real-time rocket alerts in Israel on a map.
                     The app utilizes real-time alert data provided by Pikud HaOref.
@@ -54,7 +54,7 @@ export default function Projects() {
                 <Project title="Build Monitor"
                     url="https://github.com/DetKewlDog/build-monitor-v2"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131172893838028932/build-monitor.png"
-                    tags={['Webdev', 'Python', 'React', 'JS', 'Flask']}
+                    tags={['Website', 'Python', 'React', 'JS', 'Flask']}
                 >
                     Monitor for debugging Unity player logs/builds. Can be run on a LAN.
                     Used to be a Python CLI app, but has been rewritten it using Python & React.
@@ -62,7 +62,7 @@ export default function Projects() {
                 <Project title="Route Reverse Engineer"
                     url="https://route-reverse-engineer.netlify.app"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131173853071159397/route-reverse-engineer.png"
-                    tags={['Webdev', 'JS', 'React']}
+                    tags={['Website', 'JS', 'React']}
                 >
                     Finds all possible starting points that would result in routes with a given
                     walking distance that would reach the coordinates of a given destination.
