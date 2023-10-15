@@ -38,6 +38,13 @@ export default function Projects() {
                     Minimalistic website that allows palette organization and manipulation,
                     color related operations and image manipulation.
                 </Project>
+                <Project title="Red Alert Map"
+                    url="https://github.com/DetKewlDog/red-alert-map"
+                    img="https://cdn.discordapp.com/attachments/912581812931416134/1163030713642266624/red-alert-map.png"
+                >
+                    React application that displays real-time rocket alerts in Israel on a map.
+                    The app utilizes real-time alert data provided by Pikud HaOref.
+                </Project>
                 <Project title="Build Monitor"
                     url="https://github.com/DetKewlDog/build-monitor-v2"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131172893838028932/build-monitor.png"
