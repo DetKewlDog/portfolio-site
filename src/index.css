@@ -332,7 +332,6 @@ section {
 
 .project {
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -344,6 +343,8 @@ section {
     border-color: transparent;
     border-style: solid;
     overflow: hidden;
+    display: flex;
+    flex-flow: column;
 }
 
 .project:hover {
@@ -357,6 +358,7 @@ section {
     margin-top: 4px;
     margin-bottom: 4px;
     font-size: 26px;
+    flex: 0 1 auto;
 }
 
 .project h1 span {
@@ -371,12 +373,14 @@ section {
 .project p {
     margin-top: 0;
     color: var(--col-text-w1);
+    flex: 1 1 auto;
 }
 
 .project img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    flex: 0 1 auto;
 }
 
 .project:after {
@@ -411,6 +415,32 @@ section {
 .project:active:after {
     opacity: 0;
 }
+
+.project-container {
+    display: contents;
+}
+
+.tag-container {
+    list-style-type: none;
+    padding: 0px;
+    vertical-align: bottom;
+    flex: 0 1 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tag {
+    padding: 4px;
+    padding-inline: 8px;
+    margin: 4px;
+    float: left;
+    text-decoration: none;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--col-text-o1);
+    vertical-align: bottom;
+}
+
 
 #music {
     display: flex;
