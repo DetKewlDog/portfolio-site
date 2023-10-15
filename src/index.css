@@ -75,6 +75,7 @@ html {
     height: -webkit-fill-available;
     font-family: 'Rubik', sans-serif;
     font-display: normal;
+    overflow-x: hidden;
 }
 
 body {
@@ -83,6 +84,7 @@ body {
     position: relative;
     z-index: 1;
     background-color: var(--col-bg2);
+    overflow-x: hidden;
 }
 
 body:before,
@@ -321,6 +323,160 @@ section {
 
 #badges > a {
     text-decoration: none;
+}
+
+.aboutme {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    opacity: 0;
+}
+
+.aboutme-container { display: contents; }
+
+.aboutme .descbox {
+    flex: 1 1 auto;
+    height: inherit;
+}
+
+.aboutme .descbox:not(.project) { text-align: center; }
+
+.aboutme.inview {
+    transform: translate(0, 0);
+    opacity: 1;
+    display: flex;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s;
+}
+
+.aboutme.inview.fromleft    { animation: fromleft   0.8s cubic-bezier(0.4, 0, 0.2, 1) 1; }
+.aboutme.inview.fromright   { animation: fromright  0.8s cubic-bezier(0.4, 0, 0.2, 1) 1; }
+.aboutme.inview.fromtop     { animation: fromtop    0.8s cubic-bezier(0.4, 0, 0.2, 1) 1; }
+.aboutme.inview.frombottom  { animation: frombottom 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1; }
+
+@keyframes fromleft   { from { transform: translateX(-100%); } }
+@keyframes fromright  { from { transform: translateX( 100%); } }
+@keyframes fromtop    { from { transform: translateY(-100%); } }
+@keyframes frombottom { from { transform: translateY( 100%); } }
+
+.aboutme-container > :not(.descbox) {
+    padding: .5rem;
+    margin: min(3vw, 4rem);
+    margin-top: 0;
+    height: max-content;
+    width: 20%;
+}
+
+.aboutme #featured {
+    width: 100%;
+    margin-bottom: 0;
+    height: auto;
+    padding-left: 0px;
+}
+
+.aboutme .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(4, 20%);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transform: translateY(-10px);
+    padding-left: 0px;
+    display: flex;
+    align-self: center;
+}
+
+.aboutme .grid-container .descbox:not(.project) {
+    margin: 0px;
+    width: 160%;
+}
+
+.aboutme .grid-container > :nth-child(4) {
+    flex: 1 1 auto;
+}
+
+.aboutme #skillset .grid-container {
+    padding-right: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(calc(200px + 1rem), 1fr));
+    display: flex;
+}
+
+.aboutme #skillset .descbox {
+    width: 75%;
+    flex: 1 1 auto;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.aboutme #skillset .descbox h1 {
+    font-size: 48px;
+    color: var(--col-text-o1);
+    text-shadow: 3px 0 3px var(--col-shadow);
+    font-weight: 800px;
+}
+
+.aboutme #icons-list .grid-container {
+    display: block;
+    width: 30%;
+    margin-inline: 35%;
+    grid-template-columns: repeat(auto-fit, minmax(calc(48px + 8px), 1fr));
+}
+.aboutme #icons-list img {
+    width: 72px;
+    height: 72px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.aboutme #icons-list img:hover {
+    padding: 0px;
+    transition: width 0.2s linear,
+        height 0.2s linear,
+        padding 0.2s linear;
+}
+
+.aboutme #icons-list img:not(:hover) {
+    transition: width 0.2s linear,
+        height 0.2s linear,
+        padding 0.2s linear;
+}
+
+.aboutme #toolset > :nth-child(1) {
+    float: left;
+    width: 60%;
+}
+.aboutme #toolset h1,
+.aboutme #toolset .grid-container {
+    margin-inline: 21%;
+    width: 68%;
+}
+.aboutme #toolset > :nth-child(2) {
+    float: right;
+    width: 40%;
+}
+
+@media(max-width: 1100px) {
+    .aboutme :not(#skillset) > .grid-container > :nth-child(1) { order: 2; }
+    .aboutme :not(#skillset) > .grid-container > :nth-child(2) { order: 3; }
+    .aboutme :not(#skillset) > .grid-container > :nth-child(3) { order: 4; }
+
+    .aboutme:nth-of-type(1) { flex-direction: column-reverse; }
+    .aboutme:nth-of-type(1) img {
+        width: 40%;
+        margin-inline: 30%;
+    }
+    .aboutme .grid-container { flex-direction: column; }
+    .aboutme .grid-container .descbox:not(.project) { width: 100%; }
+    .aboutme #skillset .descbox { margin-inline: 12.5%; }
+
+    .aboutme #toolset > :nth-child(n) {
+        width: 100%;
+        float: none;
+    }
+    .aboutme #toolset h1,
+    .aboutme #toolset .grid-container {
+        margin-inline: 0;
+        width: 100%;
+    }
 }
 
 .grid-container {

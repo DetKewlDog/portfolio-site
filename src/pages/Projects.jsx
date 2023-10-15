@@ -4,20 +4,20 @@ export default function Projects() {
     return (
         <>
             <div className="grid-container">
+                <Project title="Forgescape"
+                    url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
+                    img="https://cdn.discordapp.com/attachments/801426473059614730/1131173358474625024/forgescape.png"
+                    tags={['C#', 'Unity', 'Primary Project']}
+                >
+                    2D TopDown Adventure game where you are able to fight monsters,
+                    obtain powerful items and explore biomes in a procedurally generated world.
+                </Project>
                 <Project title="Portfolio Website"
                     url="https://github.com/DetKewlDog/portfolio-site"
                     img="https://cdn.discordapp.com/attachments/801426473059614730/1131173797777649664/portfolio-site.png"
                     tags={['Website', 'JS', 'React']}
                 >
                     This portfolio website's repo! Built using ReactJS. Feel free to star it on GitHub!
-                </Project>
-                <Project title="Forgescape"
-                    url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
-                    img="https://cdn.discordapp.com/attachments/801426473059614730/1131173358474625024/forgescape.png"
-                    tags={['C#', 'Unity']}
-                >
-                    2D TopDown Adventure game where you are able to fight monsters,
-                    obtain powerful items and explore biomes in a procedurally generated world.
                 </Project>
                 <Project title="Harvest Hero"
                     url="https://detkewldog.itch.io/harvest-hero"
