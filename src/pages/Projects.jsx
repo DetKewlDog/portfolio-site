@@ -44,7 +44,7 @@ export default function Projects() {
                     color related operations and image manipulation.
                 </Project>
                 <Project title="Red Alert Map"
-                    url="https://github.com/DetKewlDog/red-alert-map"
+                    url="https://red-alert-map.netlify.app/"
                     img="https://cdn.discordapp.com/attachments/912581812931416134/1163030713642266624/red-alert-map.png"
                     tags={['Website', 'JS', 'React']}
                 >
