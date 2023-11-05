@@ -4,6 +4,9 @@ import Project from '../components/Project';
 import IconsList from '../components/IconsList';
 
 export default function Home() {
+    let age = Math.floor((new Date() - new Date('2005-11-18')) / 1000 / 60 / 60 / 24 / 365.25);
+    let exp = Math.floor((new Date() - new Date('2020-04-01')) / 1000 / 60 / 60 / 24 / 365.25);
+
     return (
         <>
             <header>
@@ -20,7 +23,7 @@ export default function Home() {
             <AboutMe dir='fromleft'>
                 <Descbox>
                     <h1>Hey there, I'm Bar! 👋</h1>
-                    I'm a 17-year-old game developer, programmer and beginner guitarist from Israel! 💻🎸
+                    I'm a {age}-year-old game developer, programmer and beginner guitarist from Israel! 💻🎸
                     <br /><br />
                     I'm a passionate C#, C++, Python, and JavaScript programmer.
                     <br /><br />
@@ -28,7 +31,7 @@ export default function Home() {
                     <br /><br />
                     I work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a full-time job.
                 </Descbox>
-                <img src="/DoggoPFPcircle.png"></img>
+                <img className="profile-picture" src="/DoggoPFPcircle.png"></img>
             </AboutMe>
 
             <br /><br />
@@ -73,7 +76,7 @@ export default function Home() {
                             in-depth look into them.
                             <br /><br />
                             A complete list of projects I've<br />
-                            developed can be found <a href='' onClick={e => {
+                            developed can be found <a rel='nofollow' href='' onClick={e => {
                                 e.preventDefault();
                                 document.querySelector('a[name="Projects"]').click();
                             }}>here</a>.
@@ -89,7 +92,7 @@ export default function Home() {
                     <div id='skillset'>
                         <div className="grid-container">
                             <Descbox>
-                                <h1>3+</h1>
+                                <h1>+{exp}</h1>
                                 Years of Programming Experience
                             </Descbox>
                             <Descbox>

@@ -429,15 +429,15 @@ section {
 
 .aboutme #icons-list img:hover {
     padding: 0px;
-    transition: width 0.2s linear,
-        height 0.2s linear,
-        padding 0.2s linear;
+    transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        height 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .aboutme #icons-list img:not(:hover) {
-    transition: width 0.2s linear,
-        height 0.2s linear,
-        padding 0.2s linear;
+    transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        height 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .aboutme #toolset > :nth-child(1) {
@@ -477,6 +477,11 @@ section {
         margin-inline: 0;
         width: 100%;
     }
+}
+
+.profile-picture {
+    box-shadow:0 40px 15px -15px rgba(0, 0, 0, 0.2), inset 0 -50px 20px -20px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
 }
 
 .grid-container {
