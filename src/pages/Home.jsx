@@ -31,7 +31,7 @@ export default function Home() {
                     <br /><br />
                     I work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a full-time job.
                 </Descbox>
-                <img className="profile-picture" src="/DoggoPFPcircle.png"></img>
+                <img className='profile-picture' src='/DoggoPFPcircle.png' alt='pfp'></img>
             </AboutMe>
 
             <br /><br />
