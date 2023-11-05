@@ -3,19 +3,19 @@
 	"name": "DetKewlDog",
 	"icons": [
 		{
-			"src": "https://cdn.discordapp.com/attachments/801426473059614730/1131172395793780757/favicon.png",
+			"src": "/favicon.png",
 			"type": "image/png",
 			"sizes": "128x128",
 			"purpose": "any maskable"
 		},
 		{
-			"src": "https://cdn.discordapp.com/attachments/801426473059614730/1131551161896403065/favicon.png",
+			"src": "/favicon.png",
 			"type": "image/png",
 			"sizes": "192x192",
 			"purpose": "any maskable"
 		},
 		{
-			"src": "https://cdn.discordapp.com/attachments/801426473059614730/1131552603810058310/favicon.png",
+			"src": "/favicon.png",
 			"type": "image/png",
 			"sizes": "512x512",
 			"purpose": "any maskable"

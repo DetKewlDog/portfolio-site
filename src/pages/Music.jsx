@@ -7,19 +7,19 @@ export default function Music() {
             <div className='list-container'>
                 <Track title="Forgescape - Night"
                     date="11/09/2022"
-                    url="https://cdn.discordapp.com/attachments/801426473059614730/1132943519590395955/forgescape_night.ogg"
+                    url="/forgescape_night.ogg"
                 />
                 <Track title="Forgescape - Rain"
                     date="07/11/2022"
-                    url="https://cdn.discordapp.com/attachments/801426473059614730/1132943519259037737/forgescape_rain.ogg"
+                    url="/forgescape_rain.ogg"
                 />
                 <Track title="Forgescape - Mother Slime"
                     date="18/06/2023"
-                    url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518881566781/nms_boss.ogg"
+                    url="/nms_boss.ogg"
                 />
                 <Track title="Untitled Track"
                     date="28/04/2023"
-                    url="https://cdn.discordapp.com/attachments/801426473059614730/1132943518424379432/untitled_track.ogg"
+                    url="/untitled_track.ogg"
                 />
             </div>
             <Descbox>

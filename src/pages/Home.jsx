@@ -28,7 +28,7 @@ export default function Home() {
                     <br /><br />
                     I work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a full-time job.
                 </Descbox>
-                <img src="https://cdn.discordapp.com/attachments/912581812931416134/1163109334935421059/DoggoPFPcircle.png"></img>
+                <img src="/DoggoPFPcircle.png"></img>
             </AboutMe>
 
             <br /><br />
@@ -38,7 +38,7 @@ export default function Home() {
                     <div className="grid-container">
                         <Project title="Forgescape"
                             url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
-                            img="https://cdn.discordapp.com/attachments/801426473059614730/1131173358474625024/forgescape.png"
+                            img="/forgescape.png"
                             tags={['C#', 'Unity', 'Primary Project']}
                         >
                             2D TopDown Adventure game where you are able to fight monsters,
@@ -46,7 +46,7 @@ export default function Home() {
                         </Project>
                         <Project title="Harvest Hero"
                             url="https://detkewldog.itch.io/harvest-hero"
-                            img="https://cdn.discordapp.com/attachments/912581812931416134/1158768708043411648/harvest-hero.png"
+                            img="/harvest-hero.png"
                             tags={['C#', 'Unity', 'Game Jam']}
                         >
                             A game where players maintain an ever-shrinking farm.
@@ -54,7 +54,7 @@ export default function Home() {
                         </Project>
                         <Project title="Red Alert Map"
                             url="https://red-alert-map.netlify.app/"
-                            img="https://cdn.discordapp.com/attachments/912581812931416134/1163030713642266624/red-alert-map.png"
+                            img="/red-alert-map.png"
                             tags={['Website', 'JS', 'React']}
                         >
                             React application that displays real-time rocket alerts in Israel on a map.
