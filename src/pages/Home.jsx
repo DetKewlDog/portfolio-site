@@ -76,7 +76,7 @@ export default function Home() {
                             in-depth look into them.
                             <br /><br />
                             A complete list of projects I've<br />
-                            developed can be found <a rel='nofollow' href='' onClick={e => {
+                            developed can be found <a rel='nofollow' href='/projects' onClick={e => {
                                 e.preventDefault();
                                 document.querySelector('a[name="Projects"]').click();
                             }}>here</a>.
