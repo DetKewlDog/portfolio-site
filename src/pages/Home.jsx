@@ -23,13 +23,13 @@ export default function Home() {
             <AboutMe dir='fromleft'>
                 <Descbox>
                     <h1>Hey there, I'm Bar! 👋</h1>
-                    I'm a {age}-year-old game developer, programmer and beginner guitarist from Israel! 💻🎸
+                    I'm {age == 18 ? 'an' : 'a'} {age}-year-old game developer, programmer and beginner guitarist from Israel! 💻🎸
                     <br /><br />
                     I'm a passionate C#, C++, Python, and JavaScript programmer.
                     <br /><br />
                     I'm currently focused on learning JavaScript frameworks and game development using Unity.
                     <br /><br />
-                    I work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a full-time job.
+                    I work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a part-time job.
                 </Descbox>
                 <img className='profile-picture' src='/DoggoPFPcircle.png' alt='pfp'></img>
             </AboutMe>
