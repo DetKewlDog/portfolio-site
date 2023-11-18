@@ -5,7 +5,7 @@ import IconsList from '../components/IconsList';
 
 export default function Home() {
     let age = new Date(new Date() - new Date("2005-11-18")).getYear() - 70;
-    let exp = new Date(new Date() - new Date("2020-04-01")).getYear() - 70
+    let exp = new Date(new Date() - new Date("2020-04-01")).getYear() - 70;
 
     return (
         <>
