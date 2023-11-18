@@ -4,8 +4,8 @@ import Project from '../components/Project';
 import IconsList from '../components/IconsList';
 
 export default function Home() {
-    let age = Math.floor((new Date() - new Date('2005-11-18')) / 1000 / 60 / 60 / 24 / 365.25);
-    let exp = Math.floor((new Date() - new Date('2020-04-01')) / 1000 / 60 / 60 / 24 / 365.25);
+    let age = new Date(new Date() - new Date("2005-11-18")).getYear() - 70;
+    let exp = new Date(new Date() - new Date("2020-04-01")).getYear() - 70
 
     return (
         <>
