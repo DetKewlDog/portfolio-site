@@ -121,7 +121,7 @@ export default function Home() {
                             />
                             <h1>Things I'd Like to Learn</h1>
                             <IconsList
-                                list={['svelte', 'raspberrypi', 'vim', 'lua', 'godot']}
+                                list={['svelte', 'raspberrypi', 'vim', 'lua', 'godot', 'tauri', 'electron']}
                             />
                         </div>
                         <div>
