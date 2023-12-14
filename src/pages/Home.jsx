@@ -117,11 +117,11 @@ export default function Home() {
                         <div>
                             <h1>My Toolset</h1>
                             <IconsList
-                                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'js', 'html', 'css', 'vite', 'linux', 'supabase', 'bash']}
+                                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'js', 'html', 'css', 'vite', 'linux', 'supabase', 'bash', 'nextjs', 'ts', 'tailwind']}
                             />
                             <h1>Things I'd Like to Learn</h1>
                             <IconsList
-                                list={['svelte', 'nextjs', 'raspberrypi', 'ts', 'vim', 'lua', 'godot']}
+                                list={['svelte', 'raspberrypi', 'vim', 'lua', 'godot']}
                             />
                         </div>
                         <div>
