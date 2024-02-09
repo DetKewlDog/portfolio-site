@@ -117,7 +117,7 @@ export default function Home() {
                         <div>
                             <h1>My Toolset</h1>
                             <IconsList
-                                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'js', 'html', 'css', 'vite', 'linux', 'supabase', 'bash', 'nextjs', 'ts', 'tailwind', 'prisma']}
+                                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'ts', 'js', 'html', 'css', 'nextjs', 'tailwind', 'vite', 'linux', 'supabase', 'mongodb', 'prisma', 'postgres', 'bash', 'azure']}
                             />
                             <h1>Things I'd Like to Learn</h1>
                             <IconsList
