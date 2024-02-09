@@ -25,7 +25,7 @@ export default function Home() {
                     <h1>Hey there, I'm Bar! 👋</h1>
                     I'm {age == 18 ? 'an' : 'a'} {age}-year-old game developer, programmer and beginner guitarist from Israel! 💻🎸
                     <br /><br />
-                    I'm a passionate C#, C++, Python, and JavaScript programmer.
+                    I'm a passionate C#, C++, Python, and TS/JS programmer.
                     <br /><br />
                     I'm currently focused on learning JavaScript frameworks and game development using Unity.
                     <br /><br />
@@ -117,7 +117,7 @@ export default function Home() {
                         <div>
                             <h1>My Toolset</h1>
                             <IconsList
-                                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'ts', 'js', 'html', 'css', 'nextjs', 'tailwind', 'vite', 'linux', 'supabase', 'mongodb', 'prisma', 'postgres', 'bash', 'azure']}
+                                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'ts', 'js', 'html', 'css', 'nextjs', 'tailwind', 'vite', 'linux', 'supabase', 'mongodb', 'prisma', 'bash', 'azure']}
                             />
                             <h1>Things I'd Like to Learn</h1>
                             <IconsList
