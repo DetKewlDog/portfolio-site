@@ -8,12 +8,12 @@ import { routes, Router } from './Routes';
 import Navbar from './components/Navbar';
 
 createRoot(document.getElementById("root")).render(
-    <div className="overlay">
-        <BrowserRouter>
-            <Navbar routes={routes} />
-            <section id="content">
-                <Router />
-            </section>
-        </BrowserRouter>
-    </div>
+  <div className="overlay">
+    <BrowserRouter>
+      <Navbar routes={routes} />
+      <section id="content">
+        <Router />
+      </section>
+    </BrowserRouter>
+  </div>
 );
