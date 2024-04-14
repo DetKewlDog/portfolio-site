@@ -47,13 +47,13 @@ export default function Home() {
               2D TopDown Adventure game where you are able to fight monsters,
               obtain powerful items and explore biomes in a procedurally generated world.
             </Project>
-            <Project title="Harvest Hero"
-              url="https://detkewldog.itch.io/harvest-hero"
-              img="/harvest-hero.png"
-              tags={['C#', 'Unity', 'Game Jam']}
+            <Project title="Helldivers Companion"
+              url="https://helldiverscompanion.com"
+              img="/helldivers-companion.png"
+              tags={['Website', 'JS', 'SvelteKit']}
             >
-              A game where players maintain an ever-shrinking farm.
-              Was created as part of the Ludum Dare 54 game jam.
+              This web application allows you to check the status of Helldivers II's galactic war in real time!
+              Made in collaboration with Squid Lips and azeDevs (awesome dudes)
             </Project>
             <Project title="Red Alert Map"
               url="https://red-alert-map.netlify.app/"

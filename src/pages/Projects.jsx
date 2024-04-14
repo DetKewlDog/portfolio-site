@@ -19,6 +19,22 @@ export default function Projects() {
         >
           This portfolio website's repo! Built using ReactJS. Feel free to star it on GitHub!
         </Project>
+        <Project title="Helldivers Companion"
+          url="https://helldiverscompanion.com"
+          img="/helldivers-companion.png"
+          tags={['Website', 'JS', 'SvelteKit']}
+        >
+          This web application allows you to check the status of Helldivers II's galactic war in real time!
+          Made in collaboration with Squid Lips and azeDevs (awesome dudes)
+        </Project>
+        <Project title="Red Alert Map"
+          url="https://red-alert-map.netlify.app/"
+          img="/red-alert-map.png"
+          tags={['Website', 'JS', 'React']}
+        >
+          React application that displays real-time rocket alerts in Israel on a map.
+          The app utilizes real-time alert data provided by Pikud HaOref.
+        </Project>
         <Project title="Harvest Hero"
           url="https://detkewldog.itch.io/harvest-hero"
           img="/harvest-hero.png"
@@ -42,14 +58,6 @@ export default function Projects() {
         >
           Minimalistic website that allows palette organization and manipulation,
           color related operations and image manipulation.
-        </Project>
-        <Project title="Red Alert Map"
-          url="https://red-alert-map.netlify.app/"
-          img="/red-alert-map.png"
-          tags={['Website', 'JS', 'React']}
-        >
-          React application that displays real-time rocket alerts in Israel on a map.
-          The app utilizes real-time alert data provided by Pikud HaOref.
         </Project>
         <Project title="Build Monitor"
           url="https://github.com/DetKewlDog/build-monitor-v2"

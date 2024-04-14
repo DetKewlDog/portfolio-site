@@ -5,9 +5,9 @@ import Projects from './pages/Projects';
 import Music from './pages/Music';
 
 export const routes = [
-  { path: '/',            element: (<Home />      ), text: 'DetKewlDog'   },
-  { path: '/projects',    element: (<Projects />  ), text: 'Projects'     },
-  { path: '/music',       element: (<Music />     ), text: 'Music'        },
+  { path: '/'         , element: (<Home     />), text: 'DetKewlDog' },
+  { path: '/projects' , element: (<Projects />), text: 'Projects'   },
+  { path: '/music'    , element: (<Music    />), text: 'Music'      },
 ];
 
 export const Router = (includeDefault = true) => {

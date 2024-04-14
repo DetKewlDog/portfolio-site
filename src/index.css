@@ -464,9 +464,9 @@ section { margin-top: 55px; }
 
 .grid-container {
   display: grid;
-  padding: 30px 30px;
+  padding: 16px 16px;
   grid-template-columns: repeat(auto-fit, minmax(calc(250px + 1rem), 1fr));
-  grid-gap: 32px;
+  grid-gap: 10px;
 }
 
 .project {
