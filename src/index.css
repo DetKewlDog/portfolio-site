@@ -711,3 +711,7 @@ input[type=range] {
     transition: .2s ease-in-out;
   }
 }
+
+.fa-bars::before {
+  top: 0px;
+}

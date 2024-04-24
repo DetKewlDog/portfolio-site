@@ -12,7 +12,7 @@ export default function Home() {
       <header>
         <div className='title unselectable'>
           <h1>Bar Goldenstein</h1>
-          <h2>Game developer + programmer</h2>
+          <h2>Game Developer + Fullstack Developer</h2>
         </div>
       </header>
 
