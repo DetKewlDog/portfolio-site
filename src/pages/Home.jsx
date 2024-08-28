@@ -29,7 +29,7 @@ export default function Home() {
           <br /><br />
           I'm currently focused on learning JavaScript frameworks and game development using Unity.
           <br /><br />
-          I work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a part-time job.
+          I do not work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a part-time job.
         </Descbox>
         <img className='profile-picture' src='/DoggoPFPcircle.png' alt='pfp'></img>
       </AboutMe>
