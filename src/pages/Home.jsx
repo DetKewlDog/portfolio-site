@@ -12,7 +12,7 @@ export default function Home() {
       <header>
         <div className='title unselectable'>
           <h1>Bar Goldenstein</h1>
-          <h2>Game Developer + Fullstack Developer</h2>
+          <h2>Full-stack Developer & Cybersecurity Specialist</h2>
         </div>
       </header>
 
@@ -23,13 +23,13 @@ export default function Home() {
       <AboutMe dir='fromleft'>
         <Descbox>
           <h1>Hey there, I'm Bar! 👋</h1>
-          I'm {age == 18 ? 'an' : 'a'} {age}-year-old game developer, programmer and beginner guitarist from Israel! 💻🎸
+          I'm {age == 18 ? 'an' : 'a'} {age}-year-old full-stack developer, cybersecurity specialist and game developer from Israel! 💻
           <br /><br />
-          I'm a passionate C#, C++, Python, and TS/JS programmer.
+          I'm a passionate TS/JS, Python, C/C++ and C# developer.
           <br /><br />
-          I'm currently focused on learning JavaScript frameworks and game development using Unity.
+          As a Cybersecurity Specialist in the IDF Intelligence Directorate, I research and analyze anomalies across complex large-scale networks while leveraging my full-stack development skills to create cybersecurity tools and automations that streamline workflows and significantly strengthen operational capabilities.
           <br /><br />
-          I used to work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a part-time job between November 2023 and August 2024.
+          I used to work at <a href="https://www.rafael.co.il/" target="_blank">Rafael Advanced Defense Systems</a> as a part-time full-stack developer between November 2023 and August 2024.
         </Descbox>
         <img className='profile-picture' src='/DoggoPFPcircle.png' alt='pfp'></img>
       </AboutMe>
@@ -117,7 +117,7 @@ export default function Home() {
             <div>
               <h1>My Toolset</h1>
               <IconsList
-                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'ts', 'js', 'html', 'css', 'nextjs', 'tailwind', 'vite', 'linux', 'supabase', 'mongodb', 'prisma', 'bash', 'azure', 'svelte']}
+                list={['cs', 'unity', 'py', 'flask', 'cpp', 'c', 'react', 'nodejs', 'ts', 'js', 'html', 'css', 'nextjs', 'tailwind', 'vite', 'linux', 'supabase', 'mongodb', 'prisma', 'bash', 'azure', 'svelte', 'elasticsearch']}
               />
               <h1>Things I'd Like to Learn</h1>
               <IconsList
