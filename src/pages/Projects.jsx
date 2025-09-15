@@ -65,7 +65,7 @@ export default function Projects() {
           tags={['Website', 'Python', 'React', 'JS', 'Flask']}
         >
           Monitor for debugging Unity player logs/builds. Can be run on a LAN.
-          Used to be a Python CLI app, but has been rewritten it using Python & React.
+          Used to be a Python CLI app, but has been rewritten using Python & React.
         </Project>
         <Project title="Route Reverse Engineer"
           url="https://route-reverse-engineer.netlify.app"
