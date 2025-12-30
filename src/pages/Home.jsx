@@ -39,28 +39,28 @@ export default function Home() {
       <AboutMe dir='fromright'>
         <div id='featured'>
           <div className="grid-container">
-            <Project title="Forgescape"
-              url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
-              img="/forgescape.png"
-              tags={['C#', 'Unity', 'Primary Project']}
-            >
-              2D TopDown Adventure game where you are able to fight monsters,
-              obtain powerful items and explore biomes in a procedurally generated world.
-            </Project>
             <Project title="Helldivers Companion"
               url="https://helldiverscompanion.com"
               img="/helldivers-companion.png"
-              tags={['Website', 'JS', 'SvelteKit']}
+              tags={['TS/JS', 'SvelteKit', 'Primary Project']}
             >
               This web application allows you to check the status of Helldivers II's galactic war in real time!
               Made in collaboration with Squid Lips and azeDevs (awesome dudes)
             </Project>
+            <Project title="Forgescape"
+              url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
+              img="/forgescape.png"
+              tags={['C#', 'Unity']}
+            >
+              2D TopDown Adventure game where you are able to fight monsters,
+              obtain powerful items and explore biomes in a procedurally generated world.
+            </Project>
             <Project title="Red Alert Map"
               url="https://red-alert-map.netlify.app/"
               img="/red-alert-map.png"
-              tags={['Website', 'JS', 'React']}
+              tags={['Fullstack', 'TS/JS', 'React']}
             >
-              React application that displays real-time rocket alerts in Israel on a map.
+              Web application that displays real-time rocket alerts in Israel on a map.
               The app utilizes real-time alert data provided by Pikud HaOref.
             </Project>
             <Descbox>
