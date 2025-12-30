@@ -42,7 +42,7 @@ export default function Home() {
             <Project title="Helldivers Companion"
               url="https://helldiverscompanion.com"
               img="/helldivers-companion.png"
-              tags={['TS/JS', 'SvelteKit']}
+              tags={['Fullstack', 'TS', 'SvelteKit']}
             >
               This web application allows you to check the status of Helldivers II's galactic war in real time!
               Made in collaboration with Squid Lips and azeDevs (awesome dudes)
@@ -58,7 +58,7 @@ export default function Home() {
             <Project title="Red Alert Map"
               url="https://red-alert-map.netlify.app/"
               img="/red-alert-map.png"
-              tags={['Fullstack', 'TS/JS', 'React']}
+              tags={['Fullstack', 'TS', 'React']}
             >
               Web application that displays real-time rocket alerts in Israel on a map.
               The app utilizes real-time alert data provided by Pikud HaOref.
