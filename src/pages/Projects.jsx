@@ -4,13 +4,13 @@ export default function Projects() {
   return (
     <>
       <div className="grid-container">
-        <Project title="Forgescape"
-          url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
-          img="/forgescape.png"
-          tags={['C#', 'Unity', 'Primary Project']}
+        <Project title="Helldivers Companion"
+          url="https://helldiverscompanion.com"
+          img="/helldivers-companion.png"
+          tags={['TS/JS', 'SvelteKit', 'Primary Project']}
         >
-          2D TopDown Adventure game where you are able to fight monsters,
-          obtain powerful items and explore biomes in a procedurally generated world.
+          This web application allows you to check the status of Helldivers II's galactic war in real time!
+          Made in collaboration with Squid Lips and azeDevs (awesome dudes)
         </Project>
         <Project title="Portfolio Website"
           url="https://github.com/DetKewlDog/portfolio-site"
@@ -19,20 +19,20 @@ export default function Projects() {
         >
           This portfolio website's repo! Built using ReactJS. Feel free to star it on GitHub!
         </Project>
-        <Project title="Helldivers Companion"
-          url="https://helldiverscompanion.com"
-          img="/helldivers-companion.png"
-          tags={['Website', 'JS', 'SvelteKit']}
+        <Project title="Forgescape"
+          url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
+          img="/forgescape.png"
+          tags={['C#', 'Unity']}
         >
-          This web application allows you to check the status of Helldivers II's galactic war in real time!
-          Made in collaboration with Squid Lips and azeDevs (awesome dudes)
+          2D TopDown Adventure game where you are able to fight monsters,
+          obtain powerful items and explore biomes in a procedurally generated world.
         </Project>
         <Project title="Red Alert Map"
           url="https://red-alert-map.netlify.app/"
           img="/red-alert-map.png"
-          tags={['Website', 'JS', 'React']}
+          tags={['Fullstack', 'TS/JS', 'React']}
         >
-          React application that displays real-time rocket alerts in Israel on a map.
+          Web application that displays real-time rocket alerts in Israel on a map.
           The app utilizes real-time alert data provided by Pikud HaOref.
         </Project>
         <Project title="Harvest Hero"
