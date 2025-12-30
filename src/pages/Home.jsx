@@ -42,7 +42,7 @@ export default function Home() {
             <Project title="Helldivers Companion"
               url="https://helldiverscompanion.com"
               img="/helldivers-companion.png"
-              tags={['TS/JS', 'SvelteKit', 'Primary Project']}
+              tags={['TS/JS', 'SvelteKit']}
             >
               This web application allows you to check the status of Helldivers II's galactic war in real time!
               Made in collaboration with Squid Lips and azeDevs (awesome dudes)
