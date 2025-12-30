@@ -7,7 +7,7 @@ export default function Projects() {
         <Project title="Helldivers Companion"
           url="https://helldiverscompanion.com"
           img="/helldivers-companion.png"
-          tags={['TS/JS', 'SvelteKit']}
+          tags={['Fullstack', 'TS', 'SvelteKit']}
         >
           This web application allows you to check the status of Helldivers II's galactic war in real time!
           Made in collaboration with Squid Lips and azeDevs (awesome dudes)
@@ -22,7 +22,7 @@ export default function Projects() {
         <Project title="Forgescape"
           url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
           img="/forgescape.png"
-          tags={['C#', 'Unity']}
+          tags={['Fullstack', 'TS', 'Unity']}
         >
           2D TopDown Adventure game where you are able to fight monsters,
           obtain powerful items and explore biomes in a procedurally generated world.
