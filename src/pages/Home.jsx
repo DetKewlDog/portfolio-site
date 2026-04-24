@@ -56,7 +56,7 @@ export default function Home() {
               obtain powerful items and explore biomes in a procedurally generated world.
             </Project>
             <Project title="Red Alert Map"
-              url="https://red-alert-map.netlify.app/"
+              url="https://github.com/DetKewlDog/red-alert-map"
               img="/red-alert-map.png"
               tags={['Fullstack', 'TS', 'React']}
             >
