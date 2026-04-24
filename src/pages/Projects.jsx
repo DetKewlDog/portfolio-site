@@ -19,6 +19,14 @@ export default function Projects() {
         >
           This portfolio website's repo! Built using ReactJS. Feel free to star it on GitHub!
         </Project>
+        <Project title="Red Alert Map"
+          url="https://github.com/DetKewlDog/red-alert-map"
+          img="/red-alert-map.png"
+          tags={['Fullstack', 'TS/JS', 'React']}
+        >
+          Web application that displays real-time rocket alerts in Israel on a map.
+          The app utilizes real-time alert data provided by Pikud HaOref.
+        </Project>
         <Project title="Forgescape"
           url="https://www.youtube.com/playlist?list=PLhFxqiJA0WlWNxFYUh4fKYkagRRgUSL_f"
           img="/forgescape.png"
@@ -26,14 +34,6 @@ export default function Projects() {
         >
           2D TopDown Adventure game where you are able to fight monsters,
           obtain powerful items and explore biomes in a procedurally generated world.
-        </Project>
-        <Project title="Red Alert Map"
-          url="https://red-alert-map.netlify.app/"
-          img="/red-alert-map.png"
-          tags={['Fullstack', 'TS/JS', 'React']}
-        >
-          Web application that displays real-time rocket alerts in Israel on a map.
-          The app utilizes real-time alert data provided by Pikud HaOref.
         </Project>
         <Project title="Harvest Hero"
           url="https://detkewldog.itch.io/harvest-hero"
